@@ -3,6 +3,7 @@ import Home from './componentes/pages/Home';
 import VehicleDetail from './componentes/pages/VehicleDetail';
 import TestDrive from './componentes/pages/TestDrive';
 import Financiamento from './componentes/pages/Financiamento';
+import Admin from './componentes/pages/Admin';
 import './App.css';
 
 /**
@@ -26,6 +27,9 @@ function App() {
         {/* Rota da Página de Financiamento */}
         <Route path="/financiamento" element={<Financiamento />} />
         <Route path="/financiamento/:vehicleId" element={<Financiamento />} />
+
+        {/* Rota da Página de Admin */}
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </Router>
   );
